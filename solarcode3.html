@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar System</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: black;
+            overflow: hidden;
+        }
+        .sun {
+            width: 100px;
+            height: 100px;
+            background: yellow;
+            border-radius: 50%;
+            position: absolute;
+        }
+        .planet {
+            width: 20px;
+            height: 20px;
+            background: lightblue;
+            border-radius: 50%;
+            position: absolute;
+            animation: orbit 10s linear infinite;
+        }
+        .planet:nth-child(2) {
+            width: 30px;
+            height: 30px;
+            background: red;
+            animation-duration: 15s;
+        }
+        .planet:nth-child(3) {
+            width: 40px;
+            height: 40px;
+            background: green;
+            animation-duration: 20s;
+        }
+        @keyframes orbit {
+            from {
+                transform: rotate(0deg) translateX(200px) rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg) translateX(200px) rotate(-360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="sun"></div>
+    <div class="planet" style="--orbit-radius: 200px;"></div>
+    <div class="planet" style="--orbit-radius: 300px;"></div>
+    <div class="planet" style="--orbit-radius: 400px;"></div>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar System</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: black;
+            overflow: hidden;
+        }
+        .sun {
+            width: 100px;
+            height: 100px;
+            background: yellow;
+            border-radius: 50%;
+            position: absolute;
+        }
+        .planet {
+            width: 20px;
+            height: 20px;
+            background: lightblue;
+            border-radius: 50%;
+            position: absolute;
+            animation: orbit linear infinite;
+        }
+        .planet:nth-child(2) {
+            width: 10px;
+            height: 10px;
+            background: gray;
+            animation-duration: 5s;
+            transform-origin: 120px;
+        }
+        .planet:nth-child(3) {
+            width: 20px;
+            height: 20px;
+            background: orange;
+            animation-duration: 7s;
+            transform-origin: 160px;
+        }
+        .planet:nth-child(4) {
+            width: 25px;
+            height: 25px;
+            background: blue;
+            animation-duration: 10s;
+            transform-origin: 200px;
+        }
+        .planet:nth-child(5) {
+            width: 15px;
+            height: 15px;
+            background: red;
+            animation-duration: 12s;
+            transform-origin: 250px;
+        }
+        .planet:nth-child(6) {
+            width: 50px;
+            height: 50px;
+            background: brown;
+            animation-duration: 15s;
+            transform-origin: 300px;
+        }
+        .planet:nth-child(7) {
+            width: 40px;
+            height: 40px;
+            background: orange;
+            animation-duration: 20s;
+            transform-origin: 380px;
+        }
+        .planet:nth-child(8) {
+            width: 35px;
+            height: 35px;
+            background: lightblue;
+            animation-duration: 25s;
+            transform-origin: 450px;
+        }
+        .planet:nth-child(9) {
+            width: 30px;
+            height: 30px;
+            background: blue;
+            animation-duration: 30s;
+            transform-origin: 520px;
+        }
+        @keyframes orbit {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="sun"></div>
+    <div class="planet"></div> <!-- Mercury -->
+    <div class="planet"></div> <!-- Venus -->
+    <div class="planet"></div> <!-- Earth -->
+    <div class="planet"></div> <!-- Mars -->
+    <div class="planet"></div> <!-- Jupiter -->
+    <div class="planet"></div> <!-- Saturn -->
+    <div class="planet"></div> <!-- Uranus -->
+    <div class="planet"></div> <!-- Neptune -->
+    <div class="planet"></div> <!-- Pluto -->
+</body>
+</html>

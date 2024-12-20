@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aloe Vera Payment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            font-size: 24px;
+            text-align: center;
+        }
+        .product-info {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .product-info img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        .product-info h2 {
+            font-size: 20px;
+            margin: 10px 0;
+        }
+        .product-info p {
+            font-size: 18px;
+            color: #28a745;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        label {
+            font-weight: bold;
+        }
+        input, button {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="product-info">
+            <img src="alovera.jpg" alt="Aloe Vera">
+            <h2>Aloe Vera</h2>
+            <p>$12.00</p>
+        </div>
+        <form>
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="address">Shipping Address</label>
+            <input type="text" id="address" name="address" required>
+
+            <label for="card">Credit Card Number</label>
+            <input type="text" id="card" name="card" maxlength="16" required>
+
+            <label for="expiry">Expiry Date</label>
+            <input type="month" id="expiry" name="expiry" required>
+
+            <label for="cvv">CVV</label>
+            <input type="text" id="cvv" name="cvv" maxlength="3" required>
+
+            <button type="submit">Pay Now</button>
+        </form>
+    </div>
+</body>
+</html>
+
+<!-- Repeat similar structure for other plants -->
