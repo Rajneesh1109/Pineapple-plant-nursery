@@ -4,211 +4,122 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PineApple Nursery</title>
-    <meta name="description" content="PineApple Nursery is your gateway to a greener life with a diverse collection of premium plants.">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <div class="container">
-            <h1 class="logo">PineApple Nursery</h1>
-            <nav class="nav-menu">
+            <h1>PineApple Nursery</h1>
+            <nav>
                 <ul>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#plants">Plants</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <li><button id="cart-nav-btn" class="nav-btn">Cart (<span id="cart-count" class="badge">0</span>)</button></li>
-                    <li><button id="login-nav-btn" class="btn-primary" style="margin-left: 10px;">Login</button></li>
+                    <li><a href="login.html">login</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <main>
-        <section id="home" class="banner">
-            <div class="banner-content">
-                <h2>Welcome to PineApple Nursery</h2>
-                <p>"Let nature be a part of your home and soul."</p>
-                <a href="#plants" class="cta-btn">Shop Plants</a>
-            </div>
-        </section>
+    <section id="home" class="banner">
+        <div class="banner-content">
+            <h2>Welcome PineApple Nursery</h2>
+            <p style="color: black;">"Let nature be a part of your home and soul."</p>
+        </div>
+    </section>
 
-        <section id="about" class="section-padding">
-            <div class="container">
-                <div class="section-heading">
-                    <h2>About Us</h2>
-                </div>
-                <div class="about-content">
-                    <p>PineApple Nursery is your gateway to a greener life. We offer a diverse collection of plants, from decorative houseplants to exotic succulents, ensuring there's something for every nature lover.</p>
-                    <blockquote>"Nurture your love for greenery."</blockquote>
-                </div>
-            </div>
-        </section>
+    <section id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>PineApple Nursery is your gateway to a greener life. We offer a diverse collection of plants, from decorative houseplants to exotic succulents, ensuring there's something for every nature lover.</p>
+            <blockquote>"Nurture your love for greenery."</blockquote>
+        </div>
+    </section>
 
-        <section id="plants" class="section-padding bg-light">
-            <div class="container">
-                <div class="section-heading">
-                    <h2>Our Plants</h2>
+    <section id="plants">
+        <div class="container">
+            <h2>Our Plants</h2>
+            <div class="plant-list">
+                <div class="plant-item">
+                    <img src="snake.jpg" alt="Snake Plant">
+                    <a href="snakeplant-payment.html.html"><h3>Snake Plant</h3></a>
+                    <p>$15.00</p>
                 </div>
-                <div class="plant-list">
-                    <div class="plant-card">
-                        <div class="plant-img-wrapper"><img src="snake.jpg" alt="Snake Plant"></div>
-                        <div class="plant-info">
-                            <h3>Snake Plant</h3>
-                            <p class="price">$15.00</p>
-                            <button class="add-to-cart-btn" data-id="1" data-name="Snake Plant" data-price="15.00">Add to Cart</button>
-                        </div>
-                    </div>
-                    <div class="plant-card">
-                        <div class="plant-img-wrapper"><img src="alovera.jpg" alt="Aloe Vera"></div>
-                        <div class="plant-info">
-                            <h3>Aloe Vera</h3>
-                            <p class="price">$12.00</p>
-                            <button class="add-to-cart-btn" data-id="2" data-name="Aloe Vera" data-price="12.00">Add to Cart</button>
-                        </div>
-                    </div>
-                    <div class="plant-card">
-                        <div class="plant-img-wrapper"><img src="rose.jpg" alt="Rose plant"></div>
-                        <div class="plant-info">
-                            <h3>Rose Plant</h3>
-                            <p class="price">$25.00</p>
-                            <button class="add-to-cart-btn" data-id="3" data-name="Rose Plant" data-price="25.00">Add to Cart</button>
-                        </div>
-                    </div>
-                    <div class="plant-card">
-                        <div class="plant-img-wrapper"><img src="spider.jpg" alt="Spider Plant"></div>
-                        <div class="plant-info">
-                            <h3>Spider Plant</h3>
-                            <p class="price">$10.00</p>
-                            <button class="add-to-cart-btn" data-id="4" data-name="Spider Plant" data-price="10.00">Add to Cart</button>
-                        </div>
-                    </div>
-                    <div class="plant-card">
-                        <div class="plant-img-wrapper"><img src="orchid.jpg" alt="Orchid flower plant"></div>
-                        <div class="plant-info">
-                            <h3>Orchid Flower Plant</h3>
-                            <p class="price">$25.00</p>
-                            <button class="add-to-cart-btn" data-id="5" data-name="Orchid Flower Plant" data-price="25.00">Add to Cart</button>
-                        </div>
-                    </div>
-                    <div class="plant-card">
-                        <div class="plant-img-wrapper"><img src="peace-lily.jpg" alt="Peace Lily"></div>
-                        <div class="plant-info">
-                            <h3>Peace Lily</h3>
-                            <p class="price">$18.00</p>
-                            <button class="add-to-cart-btn" data-id="6" data-name="Peace Lily" data-price="18.00">Add to Cart</button>
-                        </div>
-                    </div>
-                    <div class="plant-card">
-                        <div class="plant-img-wrapper"><img src="black-dahlia.jpg" alt="Black Dahlia"></div>
-                        <div class="plant-info">
-                            <h3>Black Dahlia</h3>
-                            <p class="price">$22.00</p>
-                            <button class="add-to-cart-btn" data-id="7" data-name="Black Dahlia" data-price="22.00">Add to Cart</button>
-                        </div>
-                    </div>
-                    <div class="plant-card">
-                        <div class="plant-img-wrapper"><img src="rosemary.jpg" alt="Rosemary Plant"></div>
-                        <div class="plant-info">
-                            <h3>Rosemary Plant</h3>
-                            <p class="price">$14.00</p>
-                            <button class="add-to-cart-btn" data-id="8" data-name="Rosemary Plant" data-price="14.00">Add to Cart</button>
-                        </div>
-                    </div>
-                    <div class="plant-card">
-                        <div class="plant-img-wrapper"><img src="blueberry.jpg" alt="Blueberry Plant"></div>
-                        <div class="plant-info">
-                            <h3>Blueberry Plant</h3>
-                            <p class="price">$16.00</p>
-                            <button class="add-to-cart-btn" data-id="9" data-name="Blueberry Plant" data-price="16.00">Add to Cart</button>
-                        </div>
-                    </div>
+                <div class="plant-item">
+                    <img src="alovera.jpg" alt="Aloe Vera">
+                    <a href="alovera-payment.html"><h3>Aloe Vera</h3></a>
+                    <p>$12.00</p>
+                </div>
+                <div class="plant-item">
+                    <img src="rose.jpg" alt="Fiddle Leaf Fig">
+                    <h3>Rose plant</h3>
+                    <p>$25.00</p>
+                </div>
+                <div class="plant-item">
+                    <img src="spider.jpg" alt="Spider Plant">
+                    <h3>Spider Plant</h3>
+                    <p>$10.00</p>
+                </div>
+                <div class="plant-item">
+                    <img src="orchid.jpg" alt="Pine Leaf Plant">
+                    <h3>Orchid flower plant</h3>
+                    <p>$25.00</p>
+                </div>
+                <div class="plant-item">
+                    <img src="peace lily.jpg" alt="Peace Lily">
+                    <h3>Peace Lily</h3>
+                    <p>$18.00</p>
+                </div>
+                <div class="plant-item">
+                    <img src="black dahlia.jpg" alt="Peace Lily">
+                    <h3>Black Dahlia</h3>
+                    <p>$18.00</p>
+                </div>
+                <div class="plant-item">
+                    <img src="blueberry.jpg" alt="Peace Lily">
+                    <h3>BlueBerry Plant</h3>
+                    <p>$18.00</p>
+                </div>
+                <div class="plant-item">
+                    <img src="rosemary.jpg" alt="Peace Lily">
+                    <h3>Rosemary Plant</h3>
+                    <p>$18.00</p>
+                </div>
+                <div class="plant-item">
+                    <img src="peace lily.jpg" alt="Peace Lily">
+                    <h3>Peace Lily</h3>
+                    <p>$18.00</p>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="contact" class="section-padding">
-            <div class="container">
-                <div class="section-heading">
-                    <h2>Contact Us</h2>
-                </div>
-                <div class="form-container">
-                    <form action="https://formspree.io/f/xwvavdgl" method="POST" class="contact-form">
-                        <div class="form-group">
-                            <label for="name">Name:</label>
-                            <input type="text" id="name" name="name" required value="Rajneesh Chaubey" placeholder="John Doe">
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email:</label>
-                            <input type="email" id="email" name="email" required value="pinea8888@gmail.com" placeholder="john@example.com">
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message:</label>
-                            <textarea id="message" name="message" rows="5" required placeholder="How can we help you?">Hi, I am interested in purchasing some plants from your nursery. Please let me know about availability and delivery options.</textarea>
-                        </div>
-                        <button type="submit" class="submit-btn">Send Message</button>
-                    </form>
-                </div>
-            </div>
-        </section>
-    </main>
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form action="mailto:pineaa8888@gmail.com" method="post" enctype="text/plain">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+    
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+    
+    </section>
 
     <footer>
         <div class="container">
             <p>&copy; 2024 PineApple Nursery. All rights reserved.</p>
         </div>
     </footer>
-
-    <!-- Cart Modal -->
-    <div id="cart-modal" class="modal-overlay hidden">
-        <div class="modal-content side-modal">
-            <button class="close-modal" id="close-cart">&times;</button>
-            <div class="modal-header">
-                <h2>Your Cart</h2>
-            </div>
-            <div class="modal-body">
-                <div id="cart-items-container">
-                    <p class="empty-cart-msg">Your cart is empty.</p>
-                </div>
-            </div>
-            <div class="modal-footer">
-                <div class="cart-total">
-                    <span>Total:</span>
-                    <span id="cart-total-price">$0.00</span>
-                </div>
-                <button class="btn-primary full-width" id="checkout-btn">Proceed to Checkout</button>
-            </div>
-        </div>
-    </div>
-
-    <!-- Login Modal -->
-    <div id="login-modal" class="modal-overlay hidden">
-        <div class="modal-content center-modal">
-            <button class="close-modal" id="close-login">&times;</button>
-            <div class="modal-header text-center">
-                <h2>Welcome Back</h2>
-                <p>Login to your account.</p>
-            </div>
-            <div class="modal-body">
-                <form id="login-form">
-                    <div class="form-group">
-                        <label for="login-email">Email</label>
-                        <input type="email" id="login-email" required placeholder="you@example.com">
-                    </div>
-                    <div class="form-group">
-                        <label for="login-password">Password</label>
-                        <input type="password" id="login-password" required placeholder="••••••••">
-                    </div>
-                    <button type="submit" class="btn-primary full-width">Login</button>
-                </form>
-            </div>
-            <div class="modal-footer text-center" style="margin-top: 1.5rem;">
-                <p>Don't have an account? <a href="#" class="accent-link">Sign up</a></p>
-            </div>
-        </div>
-    </div>
-
-    <script src="script.js"></script>
 </body>
 </html>
