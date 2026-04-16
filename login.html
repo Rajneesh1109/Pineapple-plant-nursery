@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login / Sign Up</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Login to PineApple Nursery</h1>
+        <form action="dashboard.html" method="POST" class="login-form">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            
+            <button type="submit">Login</button>
+        </form>
+
+        <h2>Don't have an account? Sign Up</h2>
+        <form action="signup-success.html" method="POST" class="signup-form">
+            <label for="new-name">Name:</label>
+            <input type="text" id="new-name" name="name" required>
+            
+            <label for="new-email">Email:</label>
+            <input type="email" id="new-email" name="email" required>
+            
+            <label for="new-password">Password:</label>
+            <input type="password" id="new-password" name="password" required>
+            
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
+</body>
+</html>
