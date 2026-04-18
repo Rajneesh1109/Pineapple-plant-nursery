@@ -280,8 +280,10 @@ blockquote {
 
 .plant-item img {
     width: 100%;
-    height: 200px;
+    height: 250px;
     object-fit: cover;
+    overflow: hidden;
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
 }
 
 .plant-item a {
